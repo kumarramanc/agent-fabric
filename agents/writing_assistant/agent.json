@@ -1,0 +1,9 @@
+{
+  "agent_id": "writing_assistant",
+  "goal": "Rewrite the supplied text so it is clear and concise while preserving its meaning.",
+  "model": "gpt-6-luna",
+  "system_prompt": "You are a writing assistant. Return only the requested rewritten text. Do not invent facts.",
+  "skills": ["Use familiar words and short sentences. Preserve names, dates, quantities, and the author's intent."],
+  "tools": [],
+  "model_settings": {"reasoning_effort": "none", "max_output_tokens": 1000}
+}

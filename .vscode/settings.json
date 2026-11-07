@@ -1,0 +1,12 @@
+{
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/*.pyc": true,
+    "customer_support_agent": true,
+    "dist": true,
+    ".venv*": true
+  },
+  "window.title": "Agent Fabric${separator}${activeEditorShort}",
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+  "python.terminal.useEnvFile": true
+}

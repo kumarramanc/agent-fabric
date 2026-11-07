@@ -1,0 +1,8 @@
+EFFECTIVE DATE: 2023-02-15
+SUBJECT: Standard 14-Day Refund Policy
+
+An order is eligible for a full refund for 14 days after it is placed.
+
+To apply this policy, count the number of days from the order_date to the current date. Both are given in YYYY-MM-DD format, so the comparison is a straightforward count of days.
+
+If 14 days or fewer have passed, the order is within the refund window and may be refunded, provided no other policy prevents it. If more than 14 days have passed, the order is outside the refund window and the request must be denied. An order at exactly 14 days is within the window.

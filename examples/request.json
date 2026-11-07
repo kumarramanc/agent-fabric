@@ -1,0 +1,28 @@
+{
+  "agent_id": "customer_support",
+  "query": "Please look up order 1001 and explain its refund status. Do not process a refund.",
+  "overrides": {
+    "model": "gpt-6-luna",
+    "goal": "Explain the current refund status using the order record and applicable policies.",
+    "context": {"current_date": "2026-08-10"},
+    "data_sources": {
+      "orders_path": "examples/data/customer_orders.json",
+      "policies_dir": "examples/data/policies"
+    },
+    "business_data": {"channel": "learning_demo"},
+    "tools": [
+      {
+        "plugin": "ticketing.search_policies",
+        "settings": {"policies_dir": "${policies_dir}"},
+        "post_hooks": [
+          {"plugin": "policies.current_versions", "settings": {"current_date": "${current_date}"}}
+        ]
+      },
+      {
+        "plugin": "ticketing.order_lookup",
+        "settings": {"orders_path": "${orders_path}"}
+      }
+    ]
+  },
+  "debug": false
+}

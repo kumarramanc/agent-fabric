@@ -1,0 +1,8 @@
+EFFECTIVE DATE: 2023-02-15
+SUBJECT: Duplicate Refund Prevention Policy
+
+An order cannot be refunded more than once.
+
+To apply this policy, review the refund_status of the order before processing any refund. Refunding an order returns the money and voids the tickets, so the action is final and can be neither reversed nor repeated.
+
+If refund_status is false, the order has not yet been refunded and may be refunded, provided no other policy prevents it. If refund_status is true, the request must be denied, and the customer should be informed that the order was already refunded on the date recorded in refund_date.

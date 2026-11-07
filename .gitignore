@@ -1,0 +1,17 @@
+# Local secrets and virtual environment
+.env
+.env.*
+!.env.example
+.venv*/
+customer_support_agent/
+dist/
+runtime.local.json
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Local documentation and HTML files
+/docs/
+*.html
+*.htm

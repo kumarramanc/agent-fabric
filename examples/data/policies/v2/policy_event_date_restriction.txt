@@ -1,0 +1,10 @@
+EFFECTIVE DATE: 2024-08-15
+SUBJECT: 14-Day Event Date Restriction
+
+An order cannot be refunded within the final 14 days before its event, or at any point after the event has taken place.
+
+To apply this policy, count the number of days from the current date to the event_date. Both are given in YYYY-MM-DD format. A positive count means the event is still ahead, and a negative count means it has already taken place.
+
+If 14 days or more remain, the order is outside the restricted period and may be refunded, provided no other policy prevents it. If fewer than 14 days remain, or the event has already taken place, the request must be denied. A request made exactly 14 days before the event is outside the restricted period.
+
+This policy supersedes the 30-Day Advance Purchase Refund Policy. An order bought far enough ahead of its event must still be denied if the request itself arrives inside the restricted period.

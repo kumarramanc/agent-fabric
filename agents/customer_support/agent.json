@@ -1,0 +1,34 @@
+{
+  "agent_id": "customer_support",
+  "goal": "Resolve ticket-order and refund requests using the current policies and actual order records.",
+  "model": "gpt-6-luna",
+  "system_prompt_file": "agents/customer_support/system.md",
+  "skill_files": ["agents/customer_support/skills/refunds.md"],
+  "tools": [
+    {
+      "plugin": "ticketing.search_policies",
+      "settings": {"policies_dir": "${policies_dir}"},
+      "include_reason": false,
+      "post_hooks": [
+        {
+          "plugin": "policies.current_versions",
+          "settings": {"current_date": "${current_date}"}
+        }
+      ]
+    },
+    {
+      "plugin": "ticketing.order_lookup",
+      "settings": {"orders_path": "${orders_path}"}
+    },
+    {
+      "plugin": "ticketing.refund_order",
+      "settings": {"orders_path": "${orders_path}", "current_date": "${current_date}"}
+    }
+  ],
+  "model_settings": {
+    "reasoning_effort": "none",
+    "max_output_tokens": 2000,
+    "timeout_seconds": 45,
+    "max_requests": 10
+  }
+}

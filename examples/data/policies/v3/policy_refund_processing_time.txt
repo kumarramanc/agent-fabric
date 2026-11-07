@@ -1,0 +1,8 @@
+EFFECTIVE DATE: 2026-02-15
+SUBJECT: Refund Processing Time Advisory
+
+Every approved refund must be accompanied by an advisory that settlement is not immediate.
+
+Funds are returned to the original method of payment and typically clear within 10 business days, depending on the processing times of the customer's bank or card issuer.
+
+This advisory applies only once a refund has been approved. It sets no condition on eligibility and is never a reason to deny a request. The period stated here describes how long settlement takes and has nothing to do with any refund window.

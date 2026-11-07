@@ -1,0 +1,10 @@
+EFFECTIVE DATE: 2024-08-15
+SUBJECT: 30-Day Advance Purchase Refund Policy
+
+An order is eligible for a refund only if it was placed well ahead of its event.
+
+To apply this policy, count the number of days from the order_date to the event_date. Both are given in YYYY-MM-DD format, so the comparison is a straightforward count of days.
+
+If 30 days or more separate the order from its event, the order was placed far enough in advance to qualify and may be refunded, provided no other policy prevents it. If fewer than 30 days separate them, the tickets were sold as non-refundable and the request must be denied. An order placed exactly 30 days before its event qualifies.
+
+Tickets bought inside the final 29 days before an event are non-refundable from the moment of purchase. No later circumstance makes them refundable.
